@@ -61,3 +61,8 @@ margin: 10px;
     justify-content: space-around;
     margin: 10px;
 }
+#flexbox-2 {
+    display: flex;
+    flex-direction: column;  
+    margin: 70px;
+    }
