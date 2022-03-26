@@ -1,0 +1,108 @@
+<!DOCTYPE html> <html lang="sv"> <head>
+    <title>Anime</title>
+    <meta charset = "utf-8"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <link href = "css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <style>
+        .dropbtn {
+          background-color: #3498DB;
+          color: white;
+          padding: 16px;
+          font-size: 16px;
+          font-style: Arial;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropbtn:hover, .dropbtn:focus {
+          background-color: #2980B9;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f1f1f1;
+          min-width: 160px;
+          overflow: auto;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown a:hover {background-color: #ddd;}
+        
+        .show {display: block;}
+        </style>
+        </head>
+        <body>
+        
+        
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">***</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="index.html">What is Anime</a>
+            <a href="isekai.html">Isekai</a>
+            <a href="Shonen.html">Shonen</a>
+            <a href="sliceoflife.html">Slice of life</a>
+            <a href="H3nt4i.html">H3nt4i</a>
+          </div>
+        </div>
+        
+        <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
+    <header>
+        <div id="bild1">
+        <h1 id="t1">Anime</h1>
+        </header>
+        <div id="bild1">
+        <img src="img/anime.jpeg" width="800"/>
+        <p id="pic1">Picture taken by <a href="https://quickz.org/users/Itachi">@Itachi</a>
+        </p>
+    </div>
+    <div id="c1">
+    <p>In the picture above you can see a handful of popular anime characters</p>
+</div>
+      <div id="text1">
+        <p>Anime (pronounced AH-nee-may ) is a term for a style of Japanese comic book and video cartoon animation in which the main characters have large doe-like eyes. Many Web sites are devoted to anime. Anime is the prevalent style in Japanese comic books or manga . In Japan, the comic book is a popular form of entertainment for adults as well as for younger audiences. Story lines are often very sophisticated and complex and extend into episodic series. Typical anime themes or genres include Ninja and other martial arts; the supernatural or horror story; the romance; and science fiction including robots and space ships. Foils for the main characters, including robots, monsters, or just plain bad people, often lack the doe-eyed quality.
+
+            Variations of anime called hentai and ecchai are sexually-oriented. Doujinshi is the term for "autonomous comics," or comics written and distributed by independent and often amateur devotees of anime.  -TechTarget Contributor [2005-04-15]</p>
+           </div>
+           <div id="gif1">
+            <img src="img/anime.gif" width="600"/>
+        </div>
+            <script src="JavaS/Dropdown.js"></script>
+        
+        </body>
+        

@@ -1,0 +1,115 @@
+<!DOCTYPE html> <html lang="sv"> <head>
+    <title>Anime</title>
+    <meta charset = "utf-8"/>
+    <meta name = "viewport" content="width=device-width, initial-scale=1"/>
+    <link href = "css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <style>
+            .dropbtn {
+              background-color: #3498DB;
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+              cursor: pointer;
+            }
+            
+            .dropbtn:hover, .dropbtn:focus {
+              background-color: #2980B9;
+            }
+            
+            .dropdown {
+              position: relative;
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: #f1f1f1;
+              min-width: 160px;
+              overflow: auto;
+              box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-content a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+            }
+            
+            .dropdown a:hover {background-color: #ddd;}
+            
+            .show {display: block;}
+            </style>
+            </head>
+            <body>
+            
+            
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">***</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="index.html">What is Anime</a>
+                <a href="isekai.html">Isekai</a>
+                <a href="Shonen.html">Shonen</a>
+                <a href="sliceoflife.html">Slice of life</a>
+                <a href="H3nt4i.html">H3nt4i</a>
+              </div>
+            </div>
+            
+            <script>
+            /* When the user clicks on the button, 
+            toggle between hiding and showing the dropdown content */
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+            </script>
+            <header>
+              <div id="bild1">
+              <h1 id="t1">Isekai</h1>
+              </header>
+              <div id="bild1">
+                <img src="img/isekai1.png" width="800"/>
+                <p id="pic1">Picture taken by <a href="https://animecorner.me/author/marvic/">@Marvic Dan</a>
+                </p>
+
+                <div id="text1">
+                  <p> What is Isekai?</p>
+                  <p>The protagonist is transported to another world by journeying into it or being summoned into it is ‘transition into another world narratives’. While the protagonist of a traditional isekai work is usually a ‘chosen hero,’ there have been many variations on the theme. -thetealmango [2022-03-25]</p>
+                     </div>
+            </div>
+            <div id="isekai-text1">
+              <p>Konosuba</p>
+              <p>That time i got reincarnated as a slime</p>
+              <p>Mushoku Tensei</p>
+            </div>   
+            <div id="flexbox">
+              <img src="img/konosuba.jpg" width="300"/>
+              <img src="img/slime.jpg" width="300"/>
+            <img src="img/perv.jpg" width="300"/>
+          </div>
+          <div id="isekai-text">
+            <p>KOnosuba</p>
+            <p>is an isekai</p>
+            <p>is an isekai</p>
+          </div>          
+        <header class="dropdownmany"></header>
+        
